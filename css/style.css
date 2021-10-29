@@ -8,7 +8,7 @@
     padding: 0;
     font-size: 100%; 
     box-sizing: border-box;
-    font-family: 'Opens sans', sans-serif;}
+    font-family: 'Open sans', sans-serif;}
 
       nav, ul{
           list-style: none;
@@ -60,7 +60,7 @@ header:last-child{
     header{flex-direction: column;}
     header img{margin-bottom: 15px;}
     }
-
+/*HERO*/
 
 .hero{
     background-size: cover;
@@ -140,4 +140,100 @@ flex-wrap: wrap;
 @media (max-width: 700px) {
     .conheca-o-hotel .grid .small{flex-basis:100%;}
     .conheca-o-hotel .grid .large{flex-basis:100%;}
+}
+
+/*CARACTERISTICAS*/
+.caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:  100px 50px;
+    background-color:#191c03 ;
+}
+.caracteristicas h3{
+    font-size: 2.0rem;
+    margin-bottom: 35px;
+    color: white;
+}
+.caracteristicas p{
+    color: white;
+    margin-bottom: 35px;
+    max-width:800px;
+}
+.caracteristicas hr{
+    background-color:white;
+    width: 200px;
+    height: 2px;
+    border: none;
+    margin-bottom: 35px;
+}
+.caracteristicas .grid{
+width: 100%;
+display: flex;
+}
+.caracteristicas .grid li{
+    padding: 0 30px;
+    
+}
+.caracteristicas .grid li i{
+    color: #c3c63b;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.caracteristicas .grid li h4{
+    font-size: 1.5rem;
+    color: #c3c63b;
+    margin-bottom: 30px;
+}
+@media (max-width: 850px) {
+    .caracteristicas .grid{flex-direction: column;}
+ }
+    
+/*NEWSLETTER*/
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:  100px 50px; ;
+}
+.newsletter h3{
+    font-size: 2.0rem;
+    margin-bottom: 35px;
+    color: #c3c63b;
+}
+.newsletter p{
+    color: #c3c63b;
+    margin-bottom: 35px;
+    max-width:800px;
+}
+.newsletter hr{
+    background-color:#c3c63b;
+    width: 200px;
+    height: 2px;
+    border: none;
+    margin-bottom: 35px;
+}
+.newsletter form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter input {
+    padding: 15px;
+    border: 1px solid #c3c63b;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+}
+.newsletter button{
+    background-color: #c3c63b;
+    border: none;
+    padding: 15px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
 }
